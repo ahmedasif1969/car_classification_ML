@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.env
+
+# Large datasets & runs
+runs/
+data/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

@@ -1,0 +1,216 @@
+/* ─── App Layout ─────────────────────────────────────────────────────────── */
+.app-layout {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────── */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 40px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+}
+
+.logo-title {
+  font-size: 20px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #63b3ed, #9f7aea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.logo-subtitle {
+  font-size: 12px;
+  color: #8892a4;
+  font-weight: 400;
+  display: block;
+}
+
+.header-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(104, 211, 145, 0.08);
+  border: 1px solid rgba(104, 211, 145, 0.2);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #68d391;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #68d391;
+  box-shadow: 0 0 6px rgba(104, 211, 145, 0.6);
+  animation: pulse-ring 2s infinite;
+}
+
+/* ─── Main Two-Panel Layout ──────────────────────────────────────────────── */
+.app-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  flex: 1;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Panel ──────────────────────────────────────────────────────────────── */
+.panel {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.panel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.panel-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f0f4ff;
+}
+
+.panel-desc {
+  font-size: 14px;
+  color: #8892a4;
+  line-height: 1.5;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ─── Classify Button ────────────────────────────────────────────────────── */
+.classify-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+/* ─── Results Panel ──────────────────────────────────────────────────────── */
+.results-panel {
+  position: sticky;
+  top: 24px;
+}
+
+.results-placeholder {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Empty State ────────────────────────────────────────────────────────── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+  padding: 32px;
+}
+
+.empty-car-icon {
+  color: rgba(99, 179, 237, 0.3);
+}
+
+.empty-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.empty-desc {
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+.empty-desc strong {
+  color: #a0aec0;
+}
+
+/* ─── Error State ────────────────────────────────────────────────────────── */
+.error-card {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  padding: 32px;
+}
+
+.error-icon {
+  color: #fc8181;
+}
+
+.error-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fc8181;
+}
+
+.error-message {
+  font-size: 14px;
+  color: #718096;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+.app-footer {
+  text-align: center;
+  padding: 28px 0;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  color: #4a5568;
+}
