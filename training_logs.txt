@@ -1,0 +1,158 @@
+azureuser@MLProject:~/car_project$ cd /home/azureuser/car_project
+venv/bin/python train.py --epochs 50 --batch-size 32 --model all
+
+--- Training Configuration ---
+Epochs: 50
+Batch Size: 32
+Learning Rate (ResNet): 0.001
+Model selection: all
+Train directory: data/split/train
+Val directory: data/split/val
+Save directory: weights
+------------------------------
+
+=== Training ResNet-18 CNN Classifier ===
+Initializing ResNet-18 backbone with 49 classes...
+Starting ResNet-18 training on cpu for 50 epochs...
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+^[[BEpoch 1/50 | Train Loss: 1.3505 Acc: 0.6302 | Val Loss: 0.8150 Acc: 0.7551 F1: 0.7526
+--> Saved new best ResNet weights with Acc: 0.7551
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 2/50 | Train Loss: 0.4773 Acc: 0.8599 | Val Loss: 0.5277 Acc: 0.8535 F1: 0.8533
+--> Saved new best ResNet weights with Acc: 0.8535
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 3/50 | Train Loss: 0.3036 Acc: 0.9130 | Val Loss: 0.2541 Acc: 0.9269 F1: 0.9275
+--> Saved new best ResNet weights with Acc: 0.9269
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 4/50 | Train Loss: 0.2409 Acc: 0.9289 | Val Loss: 0.2871 Acc: 0.9165 F1: 0.9175
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 5/50 | Train Loss: 0.1842 Acc: 0.9440 | Val Loss: 0.2590 Acc: 0.9333 F1: 0.9328
+--> Saved new best ResNet weights with Acc: 0.9333
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 6/50 | Train Loss: 0.1769 Acc: 0.9472 | Val Loss: 0.3808 Acc: 0.8895 F1: 0.8901
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 7/50 | Train Loss: 0.0727 Acc: 0.9780 | Val Loss: 0.0985 Acc: 0.9741 F1: 0.9740
+--> Saved new best ResNet weights with Acc: 0.9741
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 8/50 | Train Loss: 0.0320 Acc: 0.9912 | Val Loss: 0.0877 Acc: 0.9757 F1: 0.9756
+--> Saved new best ResNet weights with Acc: 0.9757
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 9/50 | Train Loss: 0.0250 Acc: 0.9927 | Val Loss: 0.0803 Acc: 0.9787 F1: 0.9785
+--> Saved new best ResNet weights with Acc: 0.9787
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 10/50 | Train Loss: 0.0222 Acc: 0.9933 | Val Loss: 0.0772 Acc: 0.9781 F1: 0.9780
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 11/50 | Train Loss: 0.0197 Acc: 0.9932 | Val Loss: 0.0750 Acc: 0.9781 F1: 0.9780
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 12/50 | Train Loss: 0.0188 Acc: 0.9942 | Val Loss: 0.0797 Acc: 0.9797 F1: 0.9796
+--> Saved new best ResNet weights with Acc: 0.9797
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 13/50 | Train Loss: 0.0167 Acc: 0.9946 | Val Loss: 0.0735 Acc: 0.9792 F1: 0.9791
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 14/50 | Train Loss: 0.0160 Acc: 0.9944 | Val Loss: 0.0781 Acc: 0.9787 F1: 0.9786
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 15/50 | Train Loss: 0.0149 Acc: 0.9947 | Val Loss: 0.0819 Acc: 0.9787 F1: 0.9786
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 16/50 | Train Loss: 0.0137 Acc: 0.9951 | Val Loss: 0.0778 Acc: 0.9800 F1: 0.9801
+--> Saved new best ResNet weights with Acc: 0.9800
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 17/50 | Train Loss: 0.0112 Acc: 0.9960 | Val Loss: 0.0781 Acc: 0.9805 F1: 0.9805
+--> Saved new best ResNet weights with Acc: 0.9805
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 18/50 | Train Loss: 0.0111 Acc: 0.9958 | Val Loss: 0.0793 Acc: 0.9803 F1: 0.9802
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 19/50 | Train Loss: 0.0099 Acc: 0.9960 | Val Loss: 0.0777 Acc: 0.9800 F1: 0.9800
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 20/50 | Train Loss: 0.0110 Acc: 0.9954 | Val Loss: 0.0785 Acc: 0.9803 F1: 0.9802
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 21/50 | Train Loss: 0.0100 Acc: 0.9958 | Val Loss: 0.0782 Acc: 0.9803 F1: 0.9802
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 22/50 | Train Loss: 0.0112 Acc: 0.9951 | Val Loss: 0.0784 Acc: 0.9816 F1: 0.9815
+--> Saved new best ResNet weights with Acc: 0.9816
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 23/50 | Train Loss: 0.0114 Acc: 0.9958 | Val Loss: 0.0794 Acc: 0.9800 F1: 0.9800
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 24/50 | Train Loss: 0.0104 Acc: 0.9962 | Val Loss: 0.0792 Acc: 0.9813 F1: 0.9813
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 25/50 | Train Loss: 0.0110 Acc: 0.9958 | Val Loss: 0.0772 Acc: 0.9803 F1: 0.9802
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 26/50 | Train Loss: 0.0102 Acc: 0.9959 | Val Loss: 0.0793 Acc: 0.9811 F1: 0.9810
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 27/50 | Train Loss: 0.0104 Acc: 0.9956 | Val Loss: 0.0800 Acc: 0.9808 F1: 0.9808
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 28/50 | Train Loss: 0.0103 Acc: 0.9960 | Val Loss: 0.0783 Acc: 0.9800 F1: 0.9800
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[
+A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[
+[B^[[B^[[B^[qGEpoch 29/50 | Train Loss: 0.0095 Acc: 0.9962 | Val Loss: 0.0794 Acc: 0.9805 F1: 0.9805
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+^[[A^[[BEpoch 30/50 | Train Loss: 0.0091 Acc: 0.9965 | Val Loss: 0.0798 Acc: 0.9805 F1: 0.9805
+/home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:1102: UserWarning: 'pin_memory
+' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 31/50 | Train Loss: 0.0109 Acc: 0.9959 | Val Loss: 0.0801 Acc: 0.9811 F1: 0.9810
+                                         /home/azureuser/car_project/venv/lib/python3.12/site-packages/torch/utils/data/dat
+aloader.py:1102: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory w
+on't be used.
+  super().__init__(loader)
+
