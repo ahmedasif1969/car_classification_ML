@@ -11,23 +11,26 @@ This repository contains a ready-to-run application for classifying cars. The pr
 
 ### 1. Prerequisites
 Ensure you have the following installed:
-*   Python (3.8 to 3.12 recommended)
+*   Python 3 & pip (`python3` and `pip3`)
 *   Node.js & npm (for the frontend)
 
-### 2. Backend Setup
-Set up the Python virtual environment and install the required dependencies:
+### 2. Backend Setup (System-wide)
+Install the required Python packages directly to your system:
 
 ```bash
-# Create a virtual environment
-python3 -m venv venv
+# Install the core API requirements
+pip3 install -r requirements-api.txt
 
-# Activate the virtual environment
-source venv/bin/activate
-
-# Install requirements
-pip install -r requirements-api.txt
-pip install ultralytics scikit-learn pandas numpy torch torchvision
+# Install ML libraries (PyTorch, Ultralytics, etc.)
+pip3 install ultralytics scikit-learn pandas numpy torch torchvision
 ```
+
+> [!NOTE]
+> If your operating system blocks global pip installations (giving an `externally-managed-environment` error), add the `--break-system-packages` flag to the commands:
+> ```bash
+> pip3 install --break-system-packages -r requirements-api.txt
+> pip3 install --break-system-packages ultralytics scikit-learn pandas numpy torch torchvision
+> ```
 
 ### 3. Frontend Setup
 Navigate to the frontend directory and install dependencies:
@@ -48,11 +51,8 @@ Follow these steps to start the application:
 Run the FastAPI application from the project root. This will load the pre-trained ResNet-18 and YOLOv8 weights on startup:
 
 ```bash
-# Make sure your virtual environment is active
-source venv/bin/activate
-
 # Start FastAPI server on port 8000
-python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+python3 -m uvicorn api.main:app --host 0.0.0.0 --port 8000
 ```
 *   **API Healthcheck**: `http://localhost:8000/health`
 *   **Interactive API Docs (Swagger UI)**: `http://localhost:8000/docs`
@@ -75,10 +75,10 @@ You can also run quick prediction tests on a single image directly from the comm
 
 ```bash
 # Test using YOLOv8
-python src/inference.py --image path/to/car.jpg --model yolo --weights weights/yolov8_best.pt
+python3 src/inference.py --image path/to/car.jpg --model yolo --weights weights/yolov8_best.pt
 
 # Test using ResNet-18
-python src/inference.py --image path/to/car.jpg --model resnet18 --weights weights/resnet18_best.pth --class-map weights/resnet18_best_classes.json
+python3 src/inference.py --image path/to/car.jpg --model resnet18 --weights weights/resnet18_best.pth --class-map weights/resnet18_best_classes.json
 ```
 
 ---
